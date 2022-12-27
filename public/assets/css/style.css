@@ -88,7 +88,15 @@
     color: #cecece;
 
 }
+.ml2{
+    text-align: center;
+    top: 5%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    color: #653e3e;
 
+}
 .icon1{
     text-align: center;
     top: 15%;

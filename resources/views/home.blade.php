@@ -113,18 +113,21 @@
     <!-- Halaman ke 3 yokaqiqah -->
     <section class="lamanketiga" id="lamanketiga">
         <div class="laman2">
-            <<img src="assets/img/bg12.png" alt="" style="width:100%;";>
+            <<img src="assets/img/bg12.png" alt="" style="width:100%;";-->
+        
         </div>
-        <div class="textlt1"style="">
+        <div class="ml2" style="">
+            <h1>Kenapa Harus YokAqiqah</h1>
+        <div class="textlt1"style="">        
             <h1>Hewan Ternak pilihan</h1>
-            <div class="carousel-inner" style="width: 100%; height: 650px;">
-                <img src="assets/img/kambing.jpg" class="d-block w-100" alt="...">       
+            <img src="assets/img/kambing.jpg" alt="" style="width: 500px; height: 500px;">  
              </div>
         <div class="textlt2"style="">
             <h1>Siap saji Dan Bisa Lansung Dinikmati</h1>
-            <div class="carousel-inner" style="width: 100%; height: 650px;">
-                <img src="assets/img/home.jpg" class="d-block w-100" alt="...">  
-            </p1>
+            <img src="assets/img/home.jpg" alt="" style="width: 500px; height: 500px;">
+            <!--div class="carousel-inner" style="width: 50%; height: 650px;">
+                <img src="assets/img/home.jpg" class="d-block w-100" alt="..."-->  
+            
         </div>
 
     </section>

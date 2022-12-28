@@ -1,7 +1,8 @@
 # 
 # Hello, SI4403-Kelompok6-YokAqiqah  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width=25> !
 <div align="center">
-<iframe src="https://giphy.com/embed/cJSDRt8csBx0A7YFfh" width="480" height="230" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/hello-penguin-swerk-cJSDRt8csBx0A7YFfh">via GIPHY</a></p>
+<img src="https://media2.giphy.com/media/2XskdWOosyAWPGTMv8A/giphy.gif?cid=ecf05e47hroaqrnn8ie5u8qqg7iu6236usjep9n55csuub6w&rid=giphy.gif&ct=g"> 
+<href="https://giphy.com/gifs/hello-penguin-swerk-cJSDRt8csBx0A7YFfh">via GIPHY</a></p>
 </div>
 <br>
 

@@ -31,7 +31,7 @@
                             <label for="remember">Remember</label>
                         </div>
                         <div class="d-flex justify-content-center text-start mt-4 ">
-                            <button class="btn btn-secondary" type="submit" name="submit" onclick=""
+                            <button class="btn btn-secondary" type="submit" name="submit" onclick="true"
                                 style="width: 500px">Login</button>
                         </div>
                     </form>

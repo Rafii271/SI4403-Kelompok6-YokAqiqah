@@ -28,8 +28,8 @@
                             <input class="form-control mb-2" type="text" name="address" id="address" required placeholder="Your Address">
                         <label class="mb-2" for="password">Password</label><br>
                             <input class="form-control mb-2" type="password" name="password" id="password" required placeholder="Password">
-                        <label for="inputGroupFile01">Photo Profile</label>
-                            <input type="file" class="form-control" id="inputGroupFile01" name="gambar" style="height: 40px;">
+                        <label for="image">Photo Profile</label>
+                            <input type="file" class="form-control" id="image" name="image" style="height: 40px;">
                         <div class="text-start pt-2 mb-2">
                             <a href="{{'login'}}"><button type="submit" name="submit" onclick="" style="width: 600px" class="btn btn-dark">Register</button></a>
                         </div>

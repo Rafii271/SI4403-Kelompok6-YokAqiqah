@@ -142,7 +142,16 @@
     margin-left: 1px;
 
 }
-
+.textlt3{
+    text-align: center;
+    top: 15%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    padding: 1px 20px 1px 832px;
+    color: #653e3e;
+    margin-left: 100px;
+}
 /* laman keempat */
 .lamankeempat{
     filter: grayscale(1%); 

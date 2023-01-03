@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
+
 
 
 class authController extends Controller
@@ -20,13 +22,12 @@ class authController extends Controller
     public function Register(Request $request)
     {
         $data = $request->request->all();
-        $img = Storage::disk('public')->put('img', $request->file('image'));
 
         User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'phone' => $data['phone'],
-            'image' => $img,
+            'image' => $data['image'],
             'password' => bcrypt($data['password']),
         ]);
 
@@ -53,5 +54,13 @@ class authController extends Controller
             // The passwords do not match, redirect back to the login page with an error message
             return redirect()->route('login')->with('error', 'Login Failed');
         }
+    }
+
+    public function LogoutUser()
+    {
+        Session::flush();
+
+        auth()->logout();
+        return redirect('/')->with('success', 'Logout Success');
     }
 }

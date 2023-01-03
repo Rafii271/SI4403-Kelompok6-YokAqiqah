@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 // ========================== AUTH ==========================
 Route::post('/login', [authController::class, 'LoginUser'])->name('login.post');
 Route::post('/register', [authController::class, 'register'])->name('register.post');
+Route::post('/logout', [authController::class, 'logoutUser']);
 // ========================== AUTH ==========================
 
 Route::get('/', function () {
@@ -37,4 +38,8 @@ Route::get('/profileview', function () {
 
 Route::get('/profileupdate', function () {
     return view('profileupdate');
+});
+
+Route::get('/product', function () {
+    return view('product');
 });

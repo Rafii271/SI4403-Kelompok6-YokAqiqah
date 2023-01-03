@@ -31,10 +31,22 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#lamankeenam">Kontak</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Welcome Sambo</a>
-                    </li>
                 </ul>
+                <div class="dropdown ms-4">
+                    <button class="btn btn-light dropdown-toggle text-" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        {{ auth()->user()->name }}
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item text-black" href="{{ '/profile/'.auth()->user()->id }}">Profile</a></li>
+                        {{-- Logout --}}
+                        <li>
+                            <form action="{{ url('/logout') }}" method="POST">
+                                @csrf
+                                <button type="submit" class="dropdown-item text-">Logout</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
                 <!-- Left links -->
             </div>
             @else
@@ -64,8 +76,6 @@
                 <button class="btn btn-outline-danger bg-secondary=" type="submit"><a class="nav-link" href="login">LOGIN</a></button>
             </form>
             @endauth
-
-
     </nav>
     <!-- Navbar -->
 
@@ -80,18 +90,20 @@
             </div>
             <div class="carousel-inner" style="width: 100%; height: 650px;">
                 <div class="carousel-item active">
-                    <img src="assets/img/deskop.jpg" class="d-block w-100" alt="...">
+                    <img src="assets/img/deskop.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Hello World</h5>
-                        <p>Hallooooooooo</p>
+
+
                     </div>
+                    <div>
+                        <img src="assets/img/Frame 16.png" alt="" style="width: 100%; " ;>
+                    </div>
+
+                    >
                 </div>
 
                 >
             </div>
-
-            >
-        </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -104,6 +116,7 @@
         </div>
     </section>
     <!-- EndCoursel -->
+
 
     <!-- Halaman ke 2 -->
     <section class="lamankedua" id="lamankedua">
@@ -156,13 +169,19 @@
     <!-- Halaman ke 4 -->
     <section class="lamankeempat" id="lamankeempat">
         <div>
-            <img src="assets/img/bg22.jpg" alt="" style="width: 100%;" ;>
+            <img src="assets/img/bg23.png" alt="" style="width: 50%;" ;>
         </div>
-        <div class="textle1" style="">
-            <h1>Solusi Kami untuk Dunia Akuakultur</h1>
-            <p1>Pandemi menyebabkan dampak berkepanjangan pada ketahanan
-                .
-            </p1>
+        <div class="textlt3" style="">
+            <h1>Apa yang Anda ingin tanyakan tentang kami?</h1>
+            <h4>YokAqiqah adalah website yang mempermudah aqiqah dimanapun dan kapanpun
+                <br>Bagi orang tua yang ingin melakukan aqiqah
+                <br>namun kesulitan dikarenakan waktu yang terbatas
+                <br>Kami menyediakan layanan Aqiqah dengan hewan yang higenis serta menu yang
+                <br>bervariasi dibawah pengawasan Dewan Syariah yang bisa diantar kapanpun dan dimanapun
+
+            </h4>
+            .
+
 
         </div>
 
@@ -227,7 +246,84 @@
                 </div>
             </div>
             </div>
+            <!-- Products Start -->
+            <div class="container mt-5">
+                    <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-succ pr-3">Pilihan Paket</span></h2>
+                <div class="row px-xl-5">
+                    <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                        <div class="product-item bg-light mb-4">
+                            <div class="product-img position-relative overflow-hidden">
+                                <img class="" src="assets/img/paket1.png" alt="" style="width: 400px; height: 200px;">
+                                <div class="product-action">
+                                    
+                                </div>
+                            </div>
+                            <div class="text-center py-4">
+                                <a class="h6 text-decoration-none text-truncate" href="">Paket Keluarga</a>
+                                <div class="d-flex align-items-center justify-content-center mt-2">
+                                    <h8>Memberikan Dekorasi dan kambing terbaik saat aqiqah dengan gulai kambing dengan souvenir yang cantik untuk 100 orang</h8>
+                                    
+                                    
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center mb-1">
+                                    <small class="fa fa-star text-primary mr-1"></small>
+                                    <small class="fa fa-star text-primary mr-1"></small>
+                                    <small class="fa fa-star text-primary mr-1"></small>
+                                    <small class="fa fa-star text-primary mr-1"></small>
+                                    <small class="fa fa-star text-primary mr-1"></small>
+                                    <h9>Rp.9.500.000</h9>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                        <div class="product-item bg-light mb-4">
+                            <div class="product-img position-relative overflow-hidden">
+                                
+                                <div class="product-action">
 
+                                </div>
+                            </div>
+                            <div class="text-center py-4">
+                               
+                                <div class="d-flex align-items-center justify-content-center mt-2">
+                                   
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center mb-1">
+                                   
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                        <div class="product-item bg-light mb-4">
+                            <div class="product-img position-relative overflow-hidden">
+                                <img class="" src="assets/img/paket2.png" alt="" style="width: 400px; height: 200px;">
+                                <div class="product-action">
+                                    
+                                </div>
+                            </div>
+                            <div class="text-center py-4">
+                                <a class="h6 text-decoration-none text-truncate" href="">Paket Keluarga Besar</a>
+                                <div class="d-flex align-items-center justify-content-center mt-2">
+                                <h8>Memberikan Dekorasi dan kambing terbaik saat aqiqah dengan sate dan gulai kambing serta souvenir yang cantik untuk 150 orang</h8> 
+                                    
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center mb-1">
+                                <h9>Rp.10.250.000</h9>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    < </div>
+                </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            <!-- Products End -->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
             <script>

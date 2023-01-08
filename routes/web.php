@@ -1,6 +1,10 @@
 <?php
 
-use App\Http\Controllers\authController;
+use App\Http\Controllers\PaketController;
+use App\Http\Controllers\TransaksiController;
+use App\Http\Controllers\UserController;
+use App\Models\Paket;
+use App\Models\Transaksi;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,32 +18,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// ========================== AUTH ==========================
-Route::post('/login', [authController::class, 'LoginUser'])->name('login.post');
-Route::post('/register', [authController::class, 'register'])->name('register.post');
-Route::post('/logout', [authController::class, 'logoutUser']);
-// ========================== AUTH ==========================
-
 Route::get('/', function () {
-    return view('home');
+    // $pakets = Paket::all();
+    // $transaksis = Transaksi::where('status', '!=', 'selesai')->limit(5);
+    $pakets = Paket::paginate(4);
+    return view('welcome', compact('pakets'));
 });
 
-Route::get('/login', function () {
-    return view('login');
-});
+// Auth::routes();
 
-Route::get('/register', function () {
-    return view('register');
-});
-
-Route::get('/profileview', function () {
-    return view('profileview');
-});
-
-Route::get('/profileupdate', function () {
-    return view('profileupdate');
-});
-
-Route::get('/product', function () {
-    return view('product');
-});
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::resource('paket', PaketController::class)->middleware('auth');
+Route::resource('transaksi', TransaksiController::class)->middleware('auth');
+Route::get('/transaksi/detail/{id}', [TransaksiController::class, 'edit'])->name('transaksi.detail')->middleware('auth');
+Route::resource('user', UserController::class)->middleware('auth');

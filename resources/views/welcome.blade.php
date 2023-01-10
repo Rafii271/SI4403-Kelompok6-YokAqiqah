@@ -101,7 +101,7 @@
                         <img src="assets/img/Frame 16.png" alt="" style="width: 100%; " ;>
                     </div>
 
-                    >
+                    
                 </div>
 
                 >
@@ -170,7 +170,7 @@
 
     <!-- Halaman ke 4 -->
     <section class="lamankeempat" id="lamankeempat">
-        <div>
+        <div class="" style="margin-left:10px;">
             <img src="assets/img/bg23.png" alt="" style="width: 50%;" ;>
         </div>
         <div class="textlt3" style="">

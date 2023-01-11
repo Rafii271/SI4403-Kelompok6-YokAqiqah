@@ -7,7 +7,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="card bg-light bg-opacity-25" style="margin-top:27%;">
+                <div class="card bg-light bg-opacity-25" style="margin-top:25%;">
                     <div class="card-header text-center"><h3 class="textcol"><b>{{ __('REGISTER') }}</h3></div>
 
                     <div class="textcol card-body">

@@ -29,7 +29,7 @@
                         <a class="nav-link" href="#lamanke5">Product</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#lamankeenam">Kontak</a>
+                        <a class="nav-link" href="#lamankeenam">Contact</a>
                     </li>
                 </ul>
                 <div class="dropdown ms-4">

@@ -7,8 +7,8 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="card bg-light bg-opacity-25" style="margin-top:35%;">
-                    <div class="card-header bg-secondary bg-opacity-25 text-center"><h3 class="textcol"><b>{{ __('LOGIN') }}</h3></div>
+                <div class="card bg-light bg-opacity-25" style="margin-top:34%;">
+                    <div class="card-header bg-secondary bg-opacity-25 text-center"><h3 class="textcol"><b>{{ __('Login') }}</h3></div>
 
                     <div class="card-body">
                         <form method="POST" action="{{ route('login') }}">
